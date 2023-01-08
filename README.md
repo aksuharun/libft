@@ -1,7 +1,7 @@
 # libft
 
 
-A C library that includes some functions from the stdlib.h library, as well as additional functions that are thought to be useful for everyday programming tasks. This library will be a useful resource for programmers who are new to the C language or more experienced.
+A C library that includes some functions from the stdlib.h and string.h libraries, as well as additional functions that are thought to be useful for everyday programming tasks. This library will be a useful resource for programmers who are new to the C language or more experienced.
 
 
 
