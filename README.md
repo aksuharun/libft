@@ -3,7 +3,7 @@
 Libft is a custom C library developed at Ecole 42, designed to replicate various essential functions from stdlib.h and string.h. This project aims to deepen the understanding of C programming by providing custom implementations of standard library functions. Libft includes functions such as memory manipulation, string operations, and character checks, offering a robust toolkit for C developers. This foundational library not only serves as an educational tool but also provides a reliable and efficient set of utilities for more complex applications.
 
 
-### Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Key Featutes](#key-features)
@@ -13,12 +13,12 @@ Libft is a custom C library developed at Ecole 42, designed to replicate various
 - [Contact](#contact)
 
 
-### Overview
+## Overview  
 
 Libft is a comprehensive library that reimplements many functions from stdlib.h and string.h. It also includes additional functions that are useful for everyday programming tasks. This library is beneficial for both new and experienced C programmers.
 
 
-### Key Features
+## Key Features  
 
 - **Memory Manipulation**: Functions for handling memory allocation, comparison, and manipulation, ensuring efficient data management.
 
@@ -27,7 +27,7 @@ Libft is a comprehensive library that reimplements many functions from stdlib.h 
 - **Character Checks**: Utilities for character analysis, enabling the identification of alphanumeric, numeric, and alphabetic characters, as well as case conversion.
 
 
-### Included Functions
+## Included Functions  
 
 Libft includes a variety of functions that mimic the behavior of their standard library counterparts, along with additional utilities that enhance its functionality. Some of the key functions included are:
 
@@ -42,7 +42,7 @@ Libft includes a variety of functions that mimic the behavior of their standard 
 - Output Functions: [`ft_putchar_fd`](#ft_putchar_fd), [`ft_putstr_fd`](#ft_putstr_fd), [`ft_putendl_fd`](#ft_putendl_fd), and [`ft_putnbr_fd`](#ft_putnbr_fd).
 
 
-### Function Descriptions
+## Function Descriptions  
 
 <a id="ft_isprint"></a>  
 **ft_isprint:** Checks if a character is printable. Returns 1 if the character is printable, and 0 if it is not.
@@ -147,7 +147,7 @@ Libft includes a variety of functions that mimic the behavior of their standard 
 **ft_strjoin:** Allocates and returns a new string, which is the result of the concatenation of s1 and s2.
 
 
-### Compilation  
+## Compilation  
 
 To compile the library, use the provided Makefile:
 
@@ -173,8 +173,8 @@ make re
 ```
 
 
-### Contact
+## Contact  
 
 If you encounter any errors or have suggestions for the library, please let me know.  
 
-**E-mail:** <aharun16aksu@gmail.com> 
+**E-mail:** <harun16aksu@gmail.com> 
