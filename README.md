@@ -1,54 +1,56 @@
 # libft
 
-
-A C library that includes some functions from the stdlib.h and string.h libraries, as well as additional functions that are thought to be useful for everyday programming tasks. This library will be a useful resource for programmers who are new to the C language or more experienced.
-
+Libft is a custom C library developed at Ecole 42, designed to replicate various essential functions from stdlib.h and string.h. This project aims to deepen the understanding of C programming by providing custom implementations of standard library functions. Libft includes functions such as memory manipulation, string operations, and character checks, offering a robust toolkit for C developers. This foundational library not only serves as an educational tool but also provides a reliable and efficient set of utilities for more complex applications.
 
 
+### Table of Contents
 
-## Contents
+- [Overview](#overview)
+- [Key Featutes](#key-features)
+- [Included Functions](#included-functions)
+- [Compilation](#compilation)
+- [Function Descriptions](#function-descriptions)
+- [Contact](#contact)
 
 
-**The library consists of the following files:**
+<a id="overview"></a>
 
-* libft.h
-* ft_isprint.c
-* ft_putendl_fd.c
-* ft_strlcat.c
-* ft_strtrim.c
-* ft_atoi.c
-* ft_itoa.c
-* ft_putnbr_fd.c
-* ft_strlcpy.c
-* ft_substr.c
-* ft_bzero.c
-* ft_memchr.c
-* ft_putstr_fd.c
-* ft_strlen.c
-* ft_tolower.c
-* ft_calloc.c
-* ft_memcmp.c
-* ft_split.c
-* ft_strmapi.c
-* ft_toupper.c
-* ft_isalnum.c
-* ft_memcpy.c
-* ft_strchr.c
-* ft_strncmp.c
-* ft_isalpha.c
-* ft_memmove.c
-* ft_strdup.c
-* ft_strnstr.c
-* ft_isascii.c
-* ft_memset.c
-* ft_striteri.c
-* ft_strrchr.c
-* ft_isdigit.c
-* ft_putchar_fd.c
-* ft_strjoin.c
-* ft_strrchar.c
+### Overview
 
-## Compiling  
+Libft is a comprehensive library that reimplements many functions from stdlib.h and string.h. It also includes additional functions that are useful for everyday programming tasks. This library is beneficial for both new and experienced C programmers.
+
+
+<a id="key-features"></a>
+
+### Key Features
+
+- **Memory Manipulation**: Functions for handling memory allocation, comparison, and manipulation, ensuring efficient data management.
+
+- **String Operations**: A comprehensive suite of functions for string manipulation, including comparison, copy, concatenation, and length calculation, among others.
+
+- **Character Checks**: Utilities for character analysis, enabling the identification of alphanumeric, numeric, and alphabetic characters, as well as case conversion.
+
+
+<a id="included-functions"></a>
+
+### Included Functions
+
+Libft includes a variety of functions that mimic the behavior of their standard library counterparts, along with additional utilities that enhance its functionality. Some of the key functions included are:
+
+- Memory Allocation and Manipulation: [`ft_memset`](#ft_memset), [`ft_memcpy`](#ft_memcpy), [`ft_memmove`](#ft_memmove), [`ft_memchr`](#ft_memchr), [`ft_memcmp`](#ft_memcmp), [`ft_calloc`](#ft_calloc), and [`ft_bzero`](#ft_bzero).
+
+- String Manipulation: [`ft_strlen`](#ft_strlen), [`ft_strlcpy`](#ft_strlcpy), [`ft_strlcat`](#ft_strlcat), [`ft_strchr`](#ft_strchr), [`ft_strrchr`](#ft_strrchr), [`ft_strnstr`](#ft_strnstr), [`ft_strncmp`](#ft_strncmp), [`ft_strdup`](#ft_strdup), [`ft_substr`](#ft_substr), [`ft_strjoin`](#ft_strjoin), [`ft_strtrim`](#ft_strtrim), [`ft_split`](#ft_split), [`ft_strmapi`](#ft_strmapi), and [`ft_striteri`](#ft_striteri).
+
+- Character Checks and Conversion: [`ft_isalpha`](#ft_isalpha), [`ft_isdigit`](#ft_isdigit), [`ft_isalnum`](#ft_isalnum), [`ft_isascii`](#ft_isascii), [`ft_isprint`](#ft_isprint), [`ft_toupper`](#ft_toupper), and [`ft_tolower`](#ft_tolower).
+
+- Conversion Functions: [`ft_atoi`](#ft_atoi) and [`ft_itoa`](#ft_itoa).
+
+- Output Functions: [`ft_putchar_fd`](#ft_putchar_fd), [`ft_putstr_fd`](#ft_putstr_fd), [`ft_putendl_fd`](#ft_putendl_fd), and [`ft_putnbr_fd`](#ft_putnbr_fd).
+
+
+<a id="compilation"></a>
+
+### Compiling  
 
 To compile the library, use the provided Makefile:
 
@@ -73,79 +75,118 @@ To fully clean and rebuild the project, use the following command:
 make re
 ```
 
-## Description of Funtions  
 
-**ft_isprint:** This function checks if a character is printable. It returns 1 if the character is printable, and 0 if it is not.
+<a id="function-descriptions"></a>
 
-**ft_putendl_fd:** This function outputs a string to the specified file descriptor, followed by a newline character.
+### Function Descriptions
 
-**ft_strlcat:** This function concatenates two strings and returns the resulting string. It is similar to strcat, but with the added safety of specifying a maximum size for the destination string.
+<a id="ft_isprint"></a>
+**ft_isprint:** Checks if a character is printable. Returns 1 if the character is printable, and 0 if it is not.
 
-**ft_strtrim:** This function removes leading and trailing whitespace characters from a string and returns the resulting string.
+<a id="ft_putendl_fd"></a>
+**ft_putendl_fd:** Outputs a string to the specified file descriptor, followed by a newline character.
 
-**ft_atoi:** This function converts a string to an integer.
+<a id="ft_strlcat"></a>
+**ft_strlcat:** Concatenates two strings and returns the resulting string. Similar to strcat, but with the added safety of specifying a maximum size for the destination string.
 
-**ft_itoa:** This function converts an integer to a string.
+<a id="ft_strtrim"></a>
+**ft_strtrim:** Removes leading and trailing whitespace characters from a string and returns the new string.
 
-**ft_putnbr_fd:** This function outputs an integer to the specified file descriptor.
+<a id="ft_atoi"></a>
+**ft_atoi:** Converts a string to an integer.
 
-**ft_strlcpy:** This function copies a string and returns the resulting string. It is similar to strcpy, but with the added safety of specifying a maximum size for the destination string.
+<a id="ft_itoa"></a>
+**ft_itoa:** Converts an integer to a string.
 
-**ft_substr:** This function extracts a substring from a string and returns the resulting string.
+<a id="ft_putnbr_fd"></a>
+**ft_putnbr_fd:** Outputs an integer to the specified file descriptor.
 
-**ft_bzero:** This function sets all the bytes in a block of memory to zero.
+<a id="ft_strlcpy"></a>
+**ft_strlcpy:** Copies up to size - 1 characters from the NUL-terminated string src to dst, NUL-terminating the result.
 
-**ft_memchr:** This function searches for a character in a block of memory and returns a pointer to the first occurrence of the character.
+<a id="ft_substr"></a>
+**ft_substr:** Allocates and returns a substring from the string s.
 
-**ft_putstr_fd:** This function outputs a string to the specified file descriptor.
+<a id="ft_bzero"></a>
+**ft_bzero:** Writes n zeroed bytes to the string s.
 
-**ft_strlen:** This function returns the length of a string.
+<a id="ft_memchr"></a>
+**ft_memchr:** Scans the initial n bytes of the memory area pointed to by s for the first instance of c.
 
-**ft_tolower:** This function converts a character to lowercase.
+<a id="ft_putstr_fd"></a>
+**ft_putstr_fd:** Outputs a string to the specified file descriptor.
 
-**ft_calloc:** This function allocates memory for an array of elements and initializes the memory to zero.
+<a id="ft_strlen"></a>
+**ft_strlen:** Computes the length of the string s.
 
-**ft_memcmp:** This function compares two blocks of memory and returns an integer indicating their relative order.
+<a id="ft_tolower"></a>
+**ft_tolower:** Converts an uppercase letter to a lowercase letter.
 
-**ft_split:** This function splits a string into an array of substrings using the specified delimiter character.
+<a id="ft_calloc"></a>
+**ft_calloc:** Allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory.
 
-**ft_strmapi:** This function applies a function to each character of a string and returns the resulting string.
+<a id="ft_memcmp"></a>
+**ft_memcmp:** Compares the first n bytes of the memory areas s1 and s2.
 
-**ft_toupper:** This function converts a character to uppercase.
+<a id="ft_split"></a>
+**ft_split:** Splits a string into an array of substrings based on a delimiter.
 
-**ft_isalnum:** This function checks if a character is alphanumeric (i.e. a letter or a digit). It returns 1 if the character is alphanumeric, and 0 if it is not.
+<a id="ft_strmapi"></a>
+**ft_strmapi:** Applies the function f to each character of the string s to create a new string.
 
-**ft_memcpy:** This function copies a block of memory and returns a pointer to the destination block.
+<a id="ft_toupper"></a>
+**ft_toupper:** Converts a lowercase letter to an uppercase letter.
 
-**ft_strchr:** This function searches for a character in a string and returns a pointer to the first occurrence of the character.
+<a id="ft_isalnum"></a>
+**ft_isalnum:** Checks if a character is alphanumeric.
 
-**ft_strncmp:** This function compares two strings and returns an integer indicating their relative order. It only compares the first n characters of the strings.
+<a id="ft_memcpy"></a>
+**ft_memcpy:** Copies n bytes from memory area src to memory area dst.
 
-**ft_isalpha:** This function checks if a character is a letter. It returns 1 if the character is a letter, and 0 if it is not.
+<a id="ft_strchr"></a>
+**ft_strchr:** Locates the first occurrence of c in the string s.
 
-**ft_memmove:** This function copies a block of memory to a destination block, even if the blocks overlap.
+<a id="ft_strncmp"></a>
+**ft_strncmp:** Compares the first n bytes of s1 and s2.
 
-**ft_strdup:** This function duplicates a string and returns a pointer to the new string.
+<a id="ft_isalpha"></a>
+**ft_isalpha:** Checks if a character is a letter.
 
-**ft_strnstr:** This function searches for a substring within a string and returns a pointer to the first occurrence of the substring. It only searches for the substring within the first "len" characters of the string. If the substring is not found, it returns NULL. This function is case sensitive.
+<a id="ft_memmove"></a>
+**ft_memmove:** Copies n bytes from memory area src to memory area dst, ensuring that it handles overlapping memory areas correctly.
 
-**ft_isascii:** This function checks if a character is an ASCII character, meaning that it is a 7-bit unsigned integer between 0 and 127. It returns 1 if the character is ASCII, and 0 if it is not.
+<a id="ft_strdup"></a>
+**ft_strdup:** Duplicates the string s.
 
-**ft_memset:** This function fills the first n bytes of the memory area pointed to by s with the constant byte c. It returns a pointer to the memory area s.
+<a id="ft_strnstr"></a>
+**ft_strnstr:** Locates the first occurrence of the null-terminated string needle in the string haystack, where not more than len characters are searched.
 
-**ft_striteri:** This function applies the function f to each character of the string passed as argument, and its index as first argument. Each character is passed by address to f to be modified if necessary.
+<a id="ft_isascii"></a>
+**ft_isascii:** Checks if a character is an ASCII character.
 
-**ft_strrchr:** This function locates the last occurrence of c in the string s. It returns a pointer to the located character, or NULL if the character is not found.
+<a id="ft_memset"></a>
+**ft_memset:** Fills the first n bytes of the memory area pointed to by s with the constant byte c.
 
-**ft_isdigit:** This function checks if a character is a decimal digit. It returns 1 if the character is a digit, and 0 if it is not.
+<a id="ft_striteri"></a>
+**ft_striteri:** Applies the function f to each character of the string s, passing its index as the first argument.
 
-**ft_putchar_fd:** This function writes a character to a file descriptor. It takes the character to be written and the file descriptor as arguments.
+<a id="ft_strrchr"></a>
+**ft_strrchr:** Locates the last occurrence of c in the string s.
 
-**ft_strjoin:** This function allocates and returns a new string, which is the result of the concatenation of s1 and s2.
+<a id="ft_isdigit"></a>
+**ft_isdigit:** Checks if a character is a decimal digit.
 
-**ft_strrchar:** This function is similar to ft_strrchr, but it returns the index of the character rather than a pointer to it. If the character is not found, it returns -1.
+<a id="ft_putchar_fd"></a>
+**ft_putchar_fd:** Outputs a character to the specified file descriptor.
 
-## Contact
+<a id="ft_strjoin"></a>
+**ft_strjoin:** Allocates and returns a new string, which is the result of the concatenation of s1 and s2.
+
+<a id="contact"></a>
+
+
+### Contact
 
 If you encounter any errors or have suggestions for the library, please let me know.  
-**E-mail:** <harun16aksu@gmail.com> 
+
+**E-mail:** <aharun16aksu@gmail.com> 
